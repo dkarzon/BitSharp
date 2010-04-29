@@ -31,5 +31,15 @@ namespace BITSharp.Models
 
         public List<Artist> Artists { get; set; }
         public Venue venue { get; set; }
+
+        public string Title
+        {
+            get
+            {
+                //TODO - Fix if No Artists or venue
+                //return string.Format("{0} live in {1} {2}, {3}", Artists[0].Name, venue.City, venue.Region, venue.Country);
+                return string.Format("{0} live in {1}", Artists[0].Name, venue.City);
+            }
+        }
     }
 }
