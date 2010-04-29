@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BITSharp", "BITSharp\BITSharp.csproj", "{C7205BC8-D9EA-4F62-982E-5C96038C9B63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BITTest", "BITTest\BITTest.csproj", "{B530C8A9-A91A-4DD5-8595-8FEF0BB4764A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{848C17B5-0185-4635-B07A-EE487E232416}"
+	ProjectSection(SolutionItems) = preProject
+		BITSharp.vsmdi = BITSharp.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = BITSharp.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7205BC8-D9EA-4F62-982E-5C96038C9B63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7205BC8-D9EA-4F62-982E-5C96038C9B63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7205BC8-D9EA-4F62-982E-5C96038C9B63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7205BC8-D9EA-4F62-982E-5C96038C9B63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B530C8A9-A91A-4DD5-8595-8FEF0BB4764A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B530C8A9-A91A-4DD5-8595-8FEF0BB4764A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B530C8A9-A91A-4DD5-8595-8FEF0BB4764A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B530C8A9-A91A-4DD5-8595-8FEF0BB4764A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
