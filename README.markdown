@@ -16,9 +16,3 @@ Example usage:
     {
         //BandsInTown returned an error
     }
-
-    // Other Functions:
-    List<Event> eventList = client.Events_Daily();
-    List<Event> eventList = client.Events_Search(null, "use_geoip", 50, null, 1, 10);
-    List<Event> eventList = client.Events_Recommended(null, "use_geoip", 50, null, null, 1, 10);
-    List<Event> eventList = client.Artists_Events("de11b037-d880-40e0-8901-0397c768c457");
