@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using RestSharp.Serializers;
+using RestSharp.Deserializers;
 
 namespace BITSharp.Models
 {
@@ -10,7 +8,7 @@ namespace BITSharp.Models
     {
     }
 
-    [SerializeAs(Name = "venue")]
+    [DeserializeAs(Name = "venue")]
     public class Venue
     {
         public string ID { get; set; }

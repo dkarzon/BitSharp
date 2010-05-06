@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using RestSharp;
+﻿using RestSharp;
+using RestSharp.Deserializers;
 
 namespace BITSharp
 {
@@ -30,6 +27,8 @@ namespace BITSharp
         {
             _apiKey = apiKey;
             _restClient = new RestClient(_baseUrl);
+            _restClient.ClearHandlers();
+            _restClient.AddHandler("application/xml", new XmlAttributeDeserializer());
             //probly not needed...
             RequestCount = 0;
             DataCount = 0;

@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using RestSharp.Serializers;
+using RestSharp.Deserializers;
 
 namespace BITSharp.Models
 {
@@ -10,23 +8,23 @@ namespace BITSharp.Models
     {
     }
 
-    [SerializeAs(Name = "event")]
+    [DeserializeAs(Name = "event")]
     public class Event
     {
         public string ID { get; set; }
         public string Url { get; set; }
 
-        [SerializeAs(Name = "datetime")]
+        [DeserializeAs(Name = "datetime")]
         public DateTime StartDate { get; set; }
 
-        [SerializeAs(Name = "ticket_url")]
+        [DeserializeAs(Name = "ticket_url")]
         public string TicketUrl { get; set; }
         public string Status { get; set; }
 
-        [SerializeAs(Name = "ticket_status")]
+        [DeserializeAs(Name = "ticket_status")]
         public string TicketStatus { get; set; }
 
-        [SerializeAs(Name = "on_sale_datetime")]
+        [DeserializeAs(Name = "on_sale_datetime")]
         public string OnSaleDate { get; set; }
 
         public List<Artist> Artists { get; set; }
