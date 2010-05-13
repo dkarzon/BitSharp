@@ -36,8 +36,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Lib\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="RestSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="RestSharp">
       <HintPath>..\Lib\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
