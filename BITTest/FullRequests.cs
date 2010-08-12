@@ -99,5 +99,14 @@ namespace BITTest
             Assert.AreEqual("de11b037-d880-40e0-8901-0397c768c457", returnArtist.MusicBrainzID);
             //TODO - Add more checks
         }
+
+        [TestMethod]
+        public void TestEvents_OnSaleSoon()
+        {
+            var returnList = _client.Events_OnSaleSoon(null, null);
+
+            Assert.IsNotNull(returnList);
+            //TODO - Add more checks
+        }
     }
 }
