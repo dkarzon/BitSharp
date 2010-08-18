@@ -70,6 +70,12 @@ namespace BITSharp
             RequestCount++;
             DataCount += response.RawBytes.Length;
 
+            if (response.Data == null)
+            {
+                //Paged too far and no events
+                return new List<Models.Event>();
+            }
+
             //TODO - Add error checking...?
             if (response.Data.Errors != null && response.Data.Errors.Count > 0)
             {
